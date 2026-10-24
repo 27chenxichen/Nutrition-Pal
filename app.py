@@ -37,9 +37,9 @@ if st.button("Run Calculator"):
     
 #Product of the BMR and the multiplier
     if final_goal == "Lose weight":
-    	if intensity == "1 pound per week":
-            total_calories = int((BMR * multiplier) - 500)
-  			total_calories = int(round(total_calories / 50) * 50)
+		if intensity == "1 pound per week":
+			total_calories = int((BMR * multiplier) - 500)
+			total_calories = int(round(total_calories / 50) * 50)
     	else:
         	total_calories = int((BMR * multiplier) - 1000)
 			total_calories = int(round(total_calories / 50) * 50)
