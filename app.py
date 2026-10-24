@@ -110,7 +110,3 @@ if st.button("Run Calculator"):
 
     else:
         st.write("Your calorie target is above 4,000 calories. Consider consulting a registered dietitian for a personalized meal plan.")
-
-
-
-https://replit.com/refer/27chenxichen
