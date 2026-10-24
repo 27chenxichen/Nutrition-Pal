@@ -37,18 +37,17 @@ if st.button("Run Calculator"):
     
 #Product of the BMR and the multiplier
     if final_goal == "Lose weight":
-		if intensity == "1 pound per week":
-			total_calories = int((BMR * multiplier) - 500)
-			total_calories = int(round(total_calories / 50) * 50)
-    	else:
-        	total_calories = int((BMR * multiplier) - 1000)
-			total_calories = int(round(total_calories / 50) * 50)
+        if intensity == "1 pound per week":
+            total_calories = int((BMR * multiplier) - 500)
+        else:
+            total_calories = int((BMR * multiplier) - 1000)
     elif final_goal == "Maintain your weight":
-        total_calories = int((BMR * multiplier))
-		total_calories = int(round(total_calories / 50) * 50)
+        total_calories = int(BMR * multiplier)
     else:
         total_calories = int((BMR * multiplier) + 250)
-		total_calories = int(round(total_calories / 50) * 50)
+
+    # Round the final calorie target to the nearest 50
+    total_calories = int(round(total_calories / 50) * 50)
 
 #Calculate the amount of calories from carbs, fats, and protein
     carbohydrates_calories = total_calories * 0.40
