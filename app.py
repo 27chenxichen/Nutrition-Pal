@@ -4,7 +4,6 @@
 import streamlit as st
 import sys
 from io import StringIO
-streamlit
 
 st.title("Fitness Calorie Calculator")
 
