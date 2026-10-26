@@ -5,7 +5,7 @@ import streamlit as st
 import sys
 from io import StringIO
 
-st.title("Fitness Calorie Calculator")
+st.title("Nutrition Pal")
 
 #Gather information from the user 
 age = st.number_input("What is your age?",min_value=1, value=25)
